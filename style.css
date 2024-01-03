@@ -2074,7 +2074,10 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .foot-about ul li {
-    margin-right: 28px;
+    margin-right: 30px;
+    position: relative;
+    left: 20%;
+    
 }
 
 .foot-about ul li a {
