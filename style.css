@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.5s ease-in-out;
 }
 
 img {
@@ -1183,7 +1184,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-page .page-header {
-    background: url(images/about-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .about-page .welcome-wrap {
@@ -1313,7 +1314,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/causes-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .causes-page .featured-cause {
@@ -1549,7 +1550,7 @@ ul.tabs-nav .tab-nav.active {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .page-header {
-    background: url(images/portfolio-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .portfolio-wrap {
@@ -1591,6 +1592,17 @@ ul.tabs-nav .tab-nav.active {
     color: #262626;
 }
 
+.portfolio-item img {
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .portfolio-item img.loaded {
+    transform: rotate(0);
+  }
+  
+  
+
 .portfolio-cont h4 {
     margin-top: 10px;
     font-size: 14px;
@@ -1602,7 +1614,7 @@ ul.tabs-nav .tab-nav.active {
 # News
 --------------------------------------------------------------*/
 .news-page .page-header {
-    background: url(images/news-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .news-wrap {
@@ -1903,7 +1915,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url(images/contact-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .contact-page-wrap {
