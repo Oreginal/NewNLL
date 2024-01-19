@@ -35,7 +35,7 @@ MAIL: <a href="#"><span class="__cf_email__" data-cfemail="40232f2e34212334002f3
 </div>
 <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
 <div class="donate-btn">
-<a href="#">Donate Now</a>
+<a href="#" onclick="showPopup()">Donate Now</a>
 </div>
 </div>
 </div>
@@ -171,7 +171,7 @@ MAIL: <a href="#"><span class="__cf_email__" data-cfemail="40232f2e34212334002f3
 <div class="row">
 <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
 <h2>Help us so we can help others</h2>
-<a class="btn orange-border" href="#">Donate now</a>
+<a class="btn orange-border" href="#" onclick="showPopup()">Donate now</a>
 </div>
 </div>
 </div>
@@ -194,9 +194,8 @@ MAIL: <a href="#"><span class="__cf_email__" data-cfemail="40232f2e34212334002f3
 <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
 <h2>Useful Links</h2>
 <ul>
-<li><a href="#">Privacy Polticy</a></li>
 <li><a href="#">Become a Volunteer</a></li>
-<li><a href="#">Donate</a></li>
+<li><a href="#" onclick="showPopup()">Donate</a></li>
 <li><a href="#">Testimonials</a></li>
 <li><a href="#">Causes</a></li>
 <li><a href="#">Portfolio</a></li>
@@ -253,6 +252,43 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 </div>
 </div>
 </footer>
+<!-- Popup Modal -->
+<div id="popupModal">
+  <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h4>Donations</h4>
+      <div class="contact-address-grid mb-3">
+          <p>New Lease of Life Foundation</p>
+      </div>
+                  <form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
+                     <input required type="hidden" name="cmd" value="_paynow">
+                     <input required type="hidden" name="receiver" pattern="[0-9]" value="22945775">
+                     <input type="hidden" name="return_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <input type="hidden" name="cancel_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td style="padding: 10px;"><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+                     <td style="padding: 10px;"><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="50"
+                        style="width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;"></td>
+                     </tr>
+                     </table>
+                     
+                     <input required type="hidden" name="item_name" maxlength="255" value="Homeless Youth Development">
+                     <input type="hidden" name="item_description" maxlength="255" value="Technical training and personal-development of homeless youth (18 - 35 years)">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td colspan="2" class="center" style="padding: 10px;">
+                     <input type="image" src="https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png" alt="Donate Now" title="Donate Now with Payfast"
+                     style="display: block; margin: 0 auto;">
+                     </td>
+                     </tr>
+                     </table>
+                     </form>
+</div>
+</div>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>

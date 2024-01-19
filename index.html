@@ -55,25 +55,64 @@
 
 
 <div class="swiper-slide hero-content-wrap">
-<img src="images/back-front.jpg" alt>
-<div class="hero-content-overlay position-absolute w-100 h-100">
-<div class="container h-100">
-<div class="row h-100">
-<div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
-<header class="entry-header">
-<h4>Retrieving hope</h4>
-<h4>unlocking potential & <br>igniting dreams</h4>
-</header>
-<div class="entry-content mt-4">
+  <img src="images/back-front.jpg" alt>
+  <div class="hero-content-overlay position-absolute w-100 h-100">
+      <div class="container h-100">
+          <div class="row h-100">
+              <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                  <header class="entry-header">
+                      <h4>Retrieving hope</h4>
+                      <h4>unlocking potential & <br>igniting dreams</h4>
+                  </header>
+                  <div class="entry-content mt-4">
+                      <!-- Your entry content goes here -->
+                  </div>
+                  <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                      <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
+                      <a href="about.html" class="btn orange-border">Read More</a>
+                  </footer>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
-<footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-<a href="about.html" class="btn orange-border">Read More</a>
-</footer>
-</div>
-</div>
-</div>
-</div>
+
+<!-- Popup Modal -->
+<div id="popupModal">
+  <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h4>Donations</h4>
+      <div class="contact-address-grid mb-3">
+          <p>New Lease of Life Foundation</p>
+      </div>
+                  <form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
+                     <input required type="hidden" name="cmd" value="_paynow">
+                     <input required type="hidden" name="receiver" pattern="[0-9]" value="22945775">
+                     <input type="hidden" name="return_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <input type="hidden" name="cancel_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td style="padding: 10px;"><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+                     <td style="padding: 10px;"><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="50"
+                        style="width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;"></td>
+                     </tr>
+                     </table>
+                     
+                     <input required type="hidden" name="item_name" maxlength="255" value="Homeless Youth Development">
+                     <input type="hidden" name="item_description" maxlength="255" value="Technical training and personal-development of homeless youth (18 - 35 years)">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td colspan="2" class="center" style="padding: 10px;">
+                     <input type="image" src="https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png" alt="Donate Now" title="Donate Now with Payfast"
+                     style="display: block; margin: 0 auto;">
+                     </td>
+                     </tr>
+                     </table>
+                     </form>
+  </div>
 </div>
 
 
@@ -229,7 +268,7 @@
 <!-- <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p> -->
 </div>
 <div class="entry-footer mt-5">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick = "showPopup()">Donate Now</a>
 </div>
 </div>
 <div class="fund-raised w-100">
@@ -272,7 +311,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/g8.jpg" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -306,7 +345,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/eventDala.png" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -340,7 +379,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/eventDedication.png" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -375,7 +414,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/cause-1.jpg" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -409,7 +448,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/cause-2.jpg" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -443,7 +482,7 @@ Goal: $70 000
 <figure class="m-0">
 <img src="images/cause-3.jpg" alt>
 <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-<a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+<a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
 </div>
 </figure>
 <div class="cause-content-wrap">
@@ -553,9 +592,9 @@ Goal: $70 000
 <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
 <h2>Useful Links</h2>
 <ul>
-<li><a href="#">Privacy Polticy</a></li>
+
 <li><a href="#">Become a Volunteer</a></li>
-<li><a href="#">Donate</a></li>
+<li><a href="#" onclick="showPopup()">Donate</a></li>
 <li><a href="#">Testimonials</a></li>
 <li><a href="#">Causes</a></li>
 <li><a href="#">Portfolio</a></li>
