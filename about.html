@@ -2,276 +2,674 @@
 <html lang="en">
 
 <!-- Mirrored from preview.colorlib.com/theme/thecharity/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2023 06:50:58 GMT -->
+
 <head>
-<title>Hello World</title>
+    <title>Hello World</title>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/elegant-fonts.css">
+    <link rel="stylesheet" href="css/elegant-fonts.css">
 
-<link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
 
-<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
-<link rel="stylesheet" href="style.css">
-<script nonce="775b1b0b-80d0-445e-9477-5478e23a5476">(function(w,d){!function(j,k,l,m){j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const w of Object.entries(Object.entries(dataLayer).reduce(((x,y)=>({...x[1],...y[1]})),{})))zaraz.set(w[0],w[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const z=j.zaraz.q.shift();j[l].q.push(z)}r.defer=!0;for(const A of[localStorage,sessionStorage])Object.keys(A||{}).filter((C=>C.startsWith("_zaraz_"))).forEach((B=>{try{j[l]["z_"+B.slice(7)]=JSON.parse(A.getItem(B))}catch{j[l]["z_"+B.slice(7)]=A.getItem(B)}}));r.referrerPolicy="origin";r.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+    <link rel="stylesheet" href="style.css">
+    <script nonce="775b1b0b-80d0-445e-9477-5478e23a5476">(function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+    <style>
+        .row {
+          display: flex;
+          justify-content: space-between;
+        }
+      
+        .col-lg-4 {
+          flex: 0 0 30%; /* Adjust the width as needed */
+        }
+      </style>
+      
+</head>
+
 <body class="single-page about-page">
-<header class="site-header">
-<div class="top-header-bar">
-<div class="container">
-<div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
-<div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-<div class="header-bar-email">
-MAIL: <a href="#"><span class="__cf_email__" data-cfemail="40232f2e34212334002f3532232821322934396e232f2d">[email&#160;protected]</span></a>
-</div>
-<div class="header-bar-text">
-<p>PHONE: <span>+24 3772 120 091 / +56452 4567</span></p>
-</div>
-</div>
-<div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-<div class="donate-btn">
-<a href="#">Donate Now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="nav-bar">
-<div class="container">
-<div class="row">
-<div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-<div class="site-branding d-flex align-items-center">
-<a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
-</div>
-<nav class="site-navigation d-flex justify-content-end align-items-center">
-<ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-<li ><a href="index.html">Home</a></li>
-<li class="current-menu-item"><a href="about.html">About us</a></li>
-<li><a href="causes.html">Causes</a></li>
-<li><a href="portfolio.html">Gallery</a></li>
-<li><a href="news.html">News</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<div class="hamburger-menu d-lg-none">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<div class="page-header">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<h1>About Us</h1>
-</div>
-</div>
-</div>
-</div>
-<div class="welcome-wrap">
-<div class="container">
-<div class="row">
-<div class="col-12 col-lg-6 order-2 order-lg-1">
-<div class="welcome-content">
-<header class="entry-header">
-<h2 class="entry-title">Wellcome to our Charity</h2>
-</header>
-<div class="entry-content mt-5">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
-</div>
-<div class="entry-footer mt-5">
-<a href="#" class="btn gradient-bg mr-2">Read More</a>
-</div>
-</div>
-</div>
-<div class="col-12 col-lg-6 order-1 order-lg-2">
-<img src="images/welcome.jpg" alt="welcome">
-</div>
-</div>
-</div>
-</div>
-<div class="about-stats">
-<div class="container">
-<div class="row">
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="circular-progress-bar">
-<div class="circle" id="loader_1">
-<strong class="d-flex justify-content-center"></strong>
-</div>
-<h3 class="entry-title">Hard Work</h3>
-</div>
-</div>
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="circular-progress-bar">
-<div class="circle" id="loader_2">
-<strong class="d-flex justify-content-center"></strong>
-</div>
-<h3 class="entry-title">Pure Love</h3>
-</div>
-</div>
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="circular-progress-bar">
-<div class="circle" id="loader_3">
-<strong class="d-flex justify-content-center"></strong>
-</div>
-<h3 class="entry-title">Smart Ideas</h3>
-</div>
-</div>
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="circular-progress-bar">
-<div class="circle" id="loader_4">
-<strong class="d-flex justify-content-center"></strong>
-</div>
-<h3 class="entry-title">Good Decisions</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="about-testimonial">
-<div class="container">
-<div class="row">
-<div class="col-12 col-md-6 col-lg-5">
-<div class="testimonial-cont">
-<div class="entry-content">
-<p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
-</div>
-<div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-<img src="images/testimonial-1.jpg" alt>
-<h4>Maria Williams, <span>Volunteer</span></h4>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6 offset-lg-2 col-lg-5">
-<div class="testimonial-cont">
-<div class="entry-content">
-<p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
-</div>
-<div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-<img src="images/testimonial-2.jpg" alt>
-<h4>Cristian James, <span>Volunteer</span></h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="help-us">
-<div class="container">
-<div class="row">
-<div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-<h2>Help us so we can help others</h2>
-<a class="btn orange-border" href="#">Donate now</a>
-</div>
-</div>
-</div>
-</div>
-<footer class="site-footer">
-<div class="footer-widgets">
-<div class="container">
-<div class="row">
-<div class="col-12 col-md-6 col-lg-3">
-<div class="foot-about">
-<h2><a class="foot-logo" href="#"><img src="images/logo3.png" alt></a></h2>
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            MAIL: <a href="#">
+                                <span class="__cf_email__"
+                                      data-cfemail="40232f2e34212334002f3532232821322934396e232f2d">[email&#160;protected]</span>
+                            </a>
+                        </div>
+                        <div class="header-bar-text">
+                            <p>PHONE: <span>+24 3772 120 091 / +56452 4567</span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                            <a href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                        </div>
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="current-menu-item"><a href="about.html">About us</a></li>
+                                <li><a href="causes.html">Causes</a></li>
+                                <li><a href="portfolio.html">Gallery</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 >About Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botn-Heading">
+        <header>
+            <h3 class="botn-Heading">Benefits for the Nation</h3>
+        </header>
+    </div>
+    </section>
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p> -->
+        </div>
+        <div class="row">
+            <div class="col-lg-5 service-two-grids">
+                <div class="color-img-five">
+                    <div class="ser-sevice-grid text-center">
+                        <h4 class="botnText">Youth education and skills development </h4>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor sit amet</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 service-two-grids">
+                <div class="img-cols-grid row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="color-img-one">
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="botnText">Youth economic empowerment</h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <div class="color-img-two">
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="botnText">Poverty and hunger alleviation </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mt-md-4 mt-3">
+                        <div class=" color-img-three">
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="botnText">Moral regeneration </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mt-md-4 mt-3">
+                        <div class=" color-img-four">
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="botnText">Homelessness & Social cohesion</h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="bodHeading">
+        <div class="welcome-content">
+            <header class="entry-header">
+                <h1 class="entry-title" style="align-items: center; margin-top: 40px;  font-size: 56px;">Vision & Mission</h1>
+            </header>
+        </div>
+    </div>
+    <section class="three-grids" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-3 col-md-6 col-sm-6 p-0"> 
+                    <div class="vandmImage1">
+                        <img src="images/vision&missionC2.jpg" class="img-fluid">
+                 </div> 
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 banner-bottom-grid p-0">
+                    <div class="visiontextV">
+                        <div class="VandM">
+                            <h4>Vision</h4>
+                        </div>
+                        <p>Unleash the potential of the homeless <br/>
+                        youth for a
+                        transformed and productive life</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="vandmImage2">
+                        <img src="images/V&M crop.jpeg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 banner-bottom-grid p-0">
+                    <div class="visiontextM">
+                        <div class="VandM">
+                            <h4>Mission</h4>
+                        </div>
+                        <p>We offer technical, entrepreneurship and life skills
+                            training programme for a holistic development of the homeless youth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+    </div>
+    </div>
+    <div class="bodHeading">
+        <div class="welcome-content">
+            <header class="entry-header">
+                <h1 class="entry-title" style="align-items: center; margin-top: 40px;  font-size: 56px;">Our Board Of Directors</h1>
+            </header>
+        </div>
+    </div>
+    <!--style="background-image: url('../NewNLL/images/tt1.png')"-->
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="categories_post">
+            <img src="images/bod1.jpg" alt="Procedure">
+            <div class="categories_details">
+              <div class="categories_text">
+                <div class="border_line"></div>
+                <a href="#">
+                  <h5>Shop</h5>
+                </a>
+                <div class="border_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories_post">
+            <img src="images/bod6.jpg" alt="Procedure">
+            <div class="categories_details">
+              <div class="categories_text">
+                <div class="border_line"></div>
+                <a href="#">
+                  <h5>Shop</h5>
+                </a>
+                <div class="border_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories_post">
+            <img src="images/bod5.jpg" alt="Procedure">
+            <div class="categories_details">
+              <div class="categories_text">
+                <div class="border_line"></div>
+                <a href="#">
+                  <h5>Shop</h5>
+                </a>
+                <div class="border_line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="categories_post">
+          <img src="images/bod5.jpg" alt="Procedure">
+          <div class="categories_details">
+            <div class="categories_text">
+              <div class="border_line"></div>
+              <a href="#">
+                <h5>Shop</h5>
+              </a>
+              <div class="border_line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <div class="about-rows"></div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap" >
+                    <div class="frame"style="margin-right:150px;">
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod2.jpg" class="img-fluid">
+                            </div>
+                             <div class="circle" id="loader_1">
+                              <strong class="d-flex justify-content-center"></strong>
+                            </div> -->
+                            <!-- <h3 class="bodHeading">Tshokolo P. Nchocho</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle"> Board Chairperson</h4>
+                                <p class="frameText">
+                                    CEO of Industrial Development Corporation
+                                    <br> MBL (UNISA),
+                                    <br> MSc Finance (University of London-UK)
+                                    <br> AMP (Harvard University)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod3.jpg" class="img-fluid" style="height:500px;">
+                            </div>
+                            <h3 class="bodHeading">Nomakhosi Thoabala</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle">Secretary of the Board </h4>
+                                <p class="frameText">
+                                    Denel Property Leasing Officer
+                                    <br>B Comm Law (University of Limpopo),
+                                    <br> Diploma in Public Management (University of JHB)
+                                    <br> Certificate in Management Programme (UNISA)
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod4.jpg" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Peppy Kekana</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle"> Board Member -<br> Senior Partner KHR Attorneys
+                                <br> Professional Accountant (SA) - SA <br> Institute of Professional Accountants & Entrepreneur</h4>
+                                <p class="frameText" style="max-height: fit-content;">
+                                    Senior Partner: KHR Attorneys Inc.
+                                    <br>B. Proc (UNIN); LLB (VISTA now UJ), <br> Certificate in Management of Petroleum Policy and
+                                    Economics (Wits University)
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div>
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod1.jpg" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Cindy Dibete</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle"> Board Member -<br> Corporate Governance Specialist </h4>
+                                <p class="frameText">
+                                    Senior Partner: KHR Attorneys Inc.
+                                    <br>B. Proc (UNIN); LLB (VISTA now UJ),
+                                    <br> Certificate in Management of Petroleum Policy and Economics (Wits University)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod6.jpg" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Rev. Mogomotsi Diutlwileng</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle">Managing Director</h4>
+                                <p class="frameText">
+                                    Director: Reverend LW Mbete Education Trust
+                                    <br> Minister: Methodist Church of Southern Africa
+                                    <br> B.Th University of South Africa
+                                    <br> Diploma Senoir Primary Education - Soweto College of Education
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-5 team-grid-colum text-center about-wrap">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div class="imagePadding">
+                                <img src="images/bod5.jpg" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Zoleka Maki-Mokoena</h3>
+                            <div class="entry-title">
+                                <h4 class="bodTitle"> Board Member -<br>Senior Accountant</h4>
+                                <p class="frameText">
+                                    Accountant: Burkert Engineering
+                                    <br> National Diploma in Cost & Management Accounting (University of JHB)
+                                    <br> Diploma CIMA Management Accounting
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+    </div>
+    
+    <div class="bodHeading">
+        <div class="welcome-content">
+            <header class="entry-header">
+                <h1 class="entry-title" style="align-items: center;padding-top: 10%; font-size: 56px;">Foundation Officals</h1>
+            </header>
+        </div>
+    </div>
+    <!-- style="background-image: url('../NewNLL/images/heart.jpg') " -->
+    <!-- <div class="about-rows">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div>
+                                <img src="images/fo2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Kgomotso Mahlaba</h3>
+                            <div>
+                                <div class="entry-title">
+                                    <h4 class="bodTitle">
+                                        Project Manager - Organisational Design & Change Management
+                                        Specialist
+                                    </h4>
+                                    <p class="frameText">
+                                        Senior Project Manager (Old Mutual), <br> Organisational Design
+                                        & Change Management Specialist
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+                    <div>
+                        <div class="circular-progress-bar">
+                            <div>
+                                <img src="images/fo1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="bodHeading">Itumeleng Moeng</h3>
+                            <div>
+                                <div class="entry-title">
+                                    <h4 class="bodTitle">Project Operations Manager - Environmental Scientist & Manager</h4>
+                                    <p class="frameText">
+                                        MSc (University of Free State) <br> Manager: Environmental
+                                        science, Transmission Land & Right Eskom <br> Projects Coordinator
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+            <div>
+                <div class="circular-progress-bar">
+                    <div>
+                        <img src="images/fo4.jpg" alt="" class="img-fluid" style="height:500px;">
+                    </div>
+                    <h3 class="bodHeading">Lebogang Madibo</h3>
+                    <div>
+                        <div class="entry-title">
+                            <h4 class="bodTitle">CA (SA) - Chief Financial Office</h4>
+                            <p class="frameText">
+                                CA (SA) (Wits University) <br> Certificate of Management:
+                                Advanced Programme (Wits Business School) <br> Head of finance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+            <div>
+                <div class="circular-progress-bar">
+                    <div>
+                        <img src="images/fo7.jpg" alt="" class="img-fluid">
+                    </div>
+                    <h3 class="bodHeading">Nqobile Kunene</h3>
+                    <div>
+                        <div class="entry-title">
+                            <h4 class="bodTitle">
+                                Project Team Member - Media, Communications & Digital
+                                marketing specialist
+                            </h4>
+                            <p class="frameText">
+                                Diploma in Media Practices (Boston Media House), <br> Digital
+                                Marketing & Project Management (Red & Yellow Creative School of Business ) <br> Manager: Media &
+                                Communications Account. <br> Project Officer responsible for digital marketing and
+                                communications
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+            <div>
+                <div class="circular-progress-bar">
+                    <div>
+                        <img src="images/fo3.jpg" alt="" class="img-fluid" style="height:500px;">
+                    </div>
+                    <h3 class="bodHeading">Banele Mkhatshane</h3>
+                    <div class="entry-title">
+                        <div>
+                            <h4 class="bodTitle">CA (SA) - Finance & Accounting</h4>
+                            <p class="frameText">
+                                B Comm & CA (SA) (University of Kwazulu Natal) <br>
+                                Accountant/Control Champi- on Reutech (Pty) Ltd. Finance and Accounts Officer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center">
+            <div>
+                <div class="circular-progress-bar">
+                    <div>
+                        <img src="images/fo6.jpg" alt="" class="img-fluid">
+                    </div>
+                    <h3 class="bodHeading">Fiona K. Matebula</h3>
+                    <div>
+                        <div class="entry-title">
+                            <h4 class="bodTitle">Project Officer -<br> Entrepreneur Health Services</h4>
+                            <p class="frameText">
+                                B. Cur Admin (Occupational Health) (UJ) <br> Diploma in
+                                general nursing (Netcare) <br> Entrepreneur in Health Services: Project Officer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 team-grid-colum text-center " style="align-items: center;justify-content: center;  padding-left:51%;display: flex;">
+            <div>
+                <div class="circular-progress-bar">
+                    <div>
+                        <img src="images/fo5.jpg" alt="" class="img-fluid">
+                    </div>
+                    <h3 class="bodHeading">Nandipha Marubelela</h3>
+                    <div>
+                        <div class="entry-title">
+                            <h4 class="bodTitle">
+                                Entrepreneur & Business Development Strategist in Health
+                                sector
+                            </h4>
+                            <p class="frameText">
+                                National Diploma: Business Communications,<br> Foundation
+                                Management: Gordon Institute of Business Science: Social Entrepreneur, <br> Strategist for
+                                Siemens Healthcare: Project Officer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>-->
+    
+    <div class="help-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <h2>Help us so we can help others</h2>
+                    <a class="btn orange-border" href="#">Donate now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="#"><img src="images/logo3.png" alt></a></h2>
 
-<ul class="d-flex flex-wrap align-items-center">
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-<h2>Useful Links</h2>
-<ul>
-<li><a href="#">Privacy Polticy</a></li>
-<li><a href="#">Become a Volunteer</a></li>
-<li><a href="#">Donate</a></li>
-<li><a href="#">Testimonials</a></li>
-<li><a href="#">Causes</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">News</a></li>
-</ul>
-</div>
-<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-<div class="foot-latest-news">
-<h2>Latest News</h2>
-<ul>
-<li>
-<h3><a href="#">A new cause to help</a></h3>
-<div class="posted-date">MArch 12, 2018</div>
-</li>
-<li>
-<h3><a href="#">We love to help people</a></h3>
-<div class="posted-date">MArch 12, 2018</div>
-</li>
-<li>
-<h3><a href="#">The new ideas for helping</a></h3>
-<div class="posted-date">MArch 12, 2018</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-<div class="foot-contact">
-<h2>Contact</h2>
-<ul>
-<li><i class="fa fa-phone"></i><span>+27 82 398 0744</span></li>
-<li><i class="fa fa-envelope"></i><span><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f707979767c7a5f6b7a726f737e6b7a317c7072">info@newleaseoflifefoundation.org</a></span></li>
-<li><i class="fa fa-map-marker"></i><span>57 Erasmus Rd, Edenglen, Edenvale, 1609</span></li>
-</ul>
-</div>
-<div class="subscribe-form">
-<form class="d-flex flex-wrap align-items-center">
-<input type="email" placeholder="Your email">
-<input type="submit" value="send">
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-bar">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<p class="m-0">
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="js/circle-progress.min.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.min.js"></script>
-<script type="text/javascript" src="js/jquery.barfiller.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Privacy Polticy</a></li>
+                            <li><a href="#">Become a Volunteer</a></li>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Causes</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                            <h2>Latest News</h2>
+                            <ul>
+                                <li>
+                                    <h3><a href="#">A new cause to help</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+                                <li>
+                                    <h3><a href="#">We love to help people</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+                                <li>
+                                    <h3><a href="#">The new ideas for helping</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>+27 82 398 0744</span></li>
+                                <li>
+                                    <i class="fa fa-envelope"></i><span>
+                                        <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__"
+                                           data-cfemail="1f707979767c7a5f6b7a726f737e6b7a317c7072">info@newleaseoflifefoundation.org</a>
+                                    </span>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i><span>57 Erasmus Rd, Edenglen, Edenvale, 1609</span></li>
+                            </ul>
+                        </div>
+                        <div class="subscribe-form">
+                            <form class="d-flex flex-wrap align-items-center">
+                                <input type="email" placeholder="Your email">
+                                <input type="submit" value="send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+                            Copyright &copy;
+                            <script data-cfasync="false"
+                                    src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+                            with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/"
+                                                                                        target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.barfiller.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"83338df09907f168","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+            integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+            data-cf-beacon='{"rayId":"83338df09907f168","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+            crossorigin="anonymous"></script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/thecharity/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2023 06:50:59 GMT -->
+
 </html>
