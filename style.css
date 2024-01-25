@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 body {
     color: #262626;
     font-size: 16px;
@@ -10,6 +10,25 @@ body {
 
 img {
     vertical-align: baseline;
+}
+/* Custom Heading */
+.custom-Heading{
+    font-size: 25px;
+    font-weight:bolder;
+    padding-top: 5%;
+    text-shadow: 2px 2px 2px #000000
+    /* color: whitesmoke; */
+    /* color:#ff5a00; */
+}
+.custom-Text{
+    font-size: 20px;
+    font-weight:bolder;
+    /* color:#ff5a00; */
+}
+.cardTitle{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 2px #000000
 }
 
 /*--------------------------------------------------------------
@@ -40,13 +59,93 @@ a:hover, a:active {
 # Site Header
 --------------------------------------------------------------*/
 /*
+# My Custom Header
+--------------------------------*/
+.color-img-one {
+    /* background: url(../images/s5.1.png)no-repeat center; */
+    background: url(../NewNLL/images/s5.1.png)repeat center;
+}
+
+.color-img-two {
+    background: url(../NewNLL/images/s4.jpg)no-repeat center;
+    background: url(../NewNLL/images/s4.jpg)no-repeat center;
+}
+
+.color-img-three {
+    background: url(../NewNLL/images/s3.1.jpg)no-repeat center;
+    background: url(../NewNLL/images/s3.1.jpg)no-repeat center;
+}
+
+.color-img-four {
+    background: url(../NewNLL/images/s2.jpg)no-repeat center;
+    background: url(../NewNLL/images/s2.jpg)no-repeat center;
+}
+.color-img-five{
+    background: url(../NewNLL/images/s6\ \(1\).jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    height: 616px;
+    padding: 186px 26px;
+    box-shadow: -2px 2px 8px black;
+}
+.color-img-four,
+.color-img-three,
+.color-img-two,
+.color-img-one {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    height: 296px;
+    padding: 67px 25px;
+    box-shadow: -2px 2px 8px black;
+}
+.bodTitle{
+    color: #36ee08;
+    font-weight:bold;
+
+}
+.bodHeading{
+    /* color: #ff5a00; */
+    color: #36ee08;
+    color: #5ba6e7;
+    margin-top: 0; /* Reset default margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-weight:bolder;
+    /*height: 100vh;  Adjust if needed */
+    text-shadow: 2px 2px 2px #000000
+}
+.botn-Heading{
+    color: #ff5a00;
+   /* margin-top: 0;  Reset default margin */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-weight: 10000;
+    padding-left:7%;
+    padding-top: 50px;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 13%;
+    font-size: 56px;
+    padding-right:15% ;
+    text-shadow: 2px 2px 2px #000000
+}
+/*
 # Header Bar
 --------------------------------*/
 .top-header-bar {
     background: #5ba6e7;
     color: #fff;
 }
-
 /*
 # Header Bar Email
 --------------------------------*/
@@ -164,7 +263,24 @@ a:hover, a:active {
     width: 0;
     left: 50%;
 }
+/*Custom Design*/
+.row-team{
+    /* position: relative;
+    flex: 1;
+    justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    /* flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignContent: 'center', */
+    background-image: url(../NewNLL/images/tt1.png) no-repeat bottom;
 
+}
 /*
 # Main Menu
 --------------------------------*/
@@ -224,6 +340,7 @@ a:hover, a:active {
 .site-navigation ul li.current-menu-item a {
     border-bottom: 3px solid #00b381;
     color: #00b381;
+
 }
 
 /*
@@ -409,11 +526,12 @@ a:hover, a:active {
     font-size: 24px;
     font-weight: 600;
     color: #262626;
+    text-shadow: 2px 2px 2px #000000
 }
 
 .elements-page .elements-container {
     margin-top: 54px;
-    
+
 }
 
 .elements-page .btn {
@@ -461,6 +579,7 @@ a:hover, a:active {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
     color: #fff;
 }
+
 
 /*
 # Accordion
@@ -561,7 +680,7 @@ ul.tabs-nav .tab-nav.active {
 
 .tabs-container {
     padding: 34px;
-    
+
 }
 
 .tab-content {
@@ -775,6 +894,49 @@ ul.tabs-nav .tab-nav.active {
     padding-bottom: 50px;
 }
 
+
+/*-----Vision and Mission*/
+.VandM{
+    /* color: #ff5a00; */
+    color:#03ACEF;
+    text-shadow: 2px 2px 2px #03ACEF;
+    font-weight: bolder;
+    /* font-size: larger; */
+    font-size: 66px;
+
+}
+.visiontextV{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:23%;
+    text-align: left;
+    margin-top: 15%;
+}
+.visiontextM{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:5%;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.vision-content {
+    position: relative;
+    padding: 96px 0;
+    background: url("images/ourVision.jpg") no-repeat center;
+    background-size: cover;
+    z-index: 99;
+}
+.vision-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(21,21,21,.9);
+}
 /*
 # Welcome
 --------------------------------*/
@@ -811,9 +973,9 @@ ul.tabs-nav .tab-nav.active {
     bottom: 0;
     left: 0;
     width: 64px;
-    height: 4px;
+    height: 10px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #8BBB4D;
 }
 
 .welcome-content .entry-content {
@@ -845,6 +1007,7 @@ ul.tabs-nav .tab-nav.active {
     padding-bottom: 24px;
     font-size: 36px;
     font-weight: 600;
+    text-shadow: 2px 2px 2px #000000
 }
 
 .section-heading  .entry-title::before {
@@ -853,9 +1016,9 @@ ul.tabs-nav .tab-nav.active {
     bottom: 0;
     left: 0;
     width: 64px;
-    height: 4px;
+    height: 10px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #8BBB4D;
 }
 
 @media screen and (max-width: 992px) {
@@ -933,6 +1096,9 @@ ul.tabs-nav .tab-nav.active {
 /*
 # Featured Cause
 --------------------------------*/
+.cardText1{
+    font-weight: bolder;
+}
 .home-page-events {
     padding: 96px 0;
 }
@@ -943,7 +1109,12 @@ ul.tabs-nav .tab-nav.active {
 
 .featured-cause .cause-wrap {
     padding: 40px 24px;
-    background: #edf3f5;
+    /* background: #edf3f5; */
+    /* background:rgba(0, 191, 255, 0.1); */
+    border-radius: 50px;
+    /* border: 5px solid #03ACEF; */
+     border:5px solid #88C435;
+    /*#8BBB4D */
 }
 
 .featured-cause .featured-cause .cause-wrap figure {
@@ -954,6 +1125,7 @@ ul.tabs-nav .tab-nav.active {
 .cause-wrap figure img {
     display: block;
     width: 100%;
+
 }
 
 .featured-cause .cause-content-wrap {
@@ -964,6 +1136,8 @@ ul.tabs-nav .tab-nav.active {
     font-size: 18px;
     font-weight: 600;
     color: #262626;
+
+
 }
 
 .cause-content-wrap .posted-date a,
@@ -975,6 +1149,8 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 500;
     line-height: 1;
     color: #262626;
+
+
 }
 
 .cause-content-wrap .posted-date a {
@@ -997,20 +1173,33 @@ ul.tabs-nav .tab-nav.active {
     margin-bottom: 0;
     font-size: 14px;
     color: #929191;
+
 }
 
 .cause-wrap .fund-raised {
     margin-top: 64px;
+
 }
 
 .fund-raised-details {
     font-size: 14px;
     color: #929191;
+    font-weight: bold;
+}
+.img-abt-info1 {
+    background: url(../NewNLL/images/vision&mission.jpg)no-repeat center;
 }
 
+.img-abt-info2 {
+    background: url(../images/m-pic.jpg)no-repeat center;
+}
 /*
 # Home Causes
 --------------------------------*/
+.imageEvent{
+    width: 1000px; /* Set the desired width */
+    height: 2500px;
+}
 .our-causes {
     position: relative;
     padding: 96px 0;
@@ -1145,12 +1334,122 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+/* .team-grid-colum{
+    margin-right: 10%;
+} */
+.contentGroup{
+    margin: 50px;
+}
+/* .vandmImage1{
+    box-shadow: 10px 0px 60px 0px #03ACEF;
+}
+
+.vandmImage2{
+    box-shadow: 0px 0px 60px 0px #03ACEF; */
+/* } */
+.botnText{
+    text-shadow: 1px 1px 1px #000000;
+
+}
+.ser-sevice-grid {
+    padding: 1.5em 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    /* background: rgba(255, 255, 255, 0.65); */
+      /* background-color: rgba(136, 196, 53, 0.575); */
+     background-color: rgba(139, 187, 77, 0.1) ;
+    /*background-color: #14668A;*/
+    /* background-color: rgba(20, 102, 138, 0.3);  */
+     background:rgba(0, 191, 255, 0.1);
+}
+
+.frame {
+    width: 120%; /* Adjust the width as needed */
+    /*margin: 20px auto; /* Center the frame */
+    background-color: #ffffff; /* Set the frame's background color */
+    border: 10px solid black; /* Set the border color and size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+    margin-right: 0%;
+    padding-bottom: 20%;
+}
+.frameOff{
+ /* Adjust the width as needed */
+    /*margin: 20px auto; /* Center the frame */
+    background-color: #ffffff; /* Set the frame's background color */
+    border: 10px solid black; /* Set the border color and size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+    margin-right: 0%;
+    padding-bottom: 20%;
+}
+.frameText{
+color:#131212;
+font-weight: bolder;
+text-shadow: 1px 1px 1px #000000;
+}
+.team-grid-coloumn{
+    margin-bottom: 20px;
+    margin-left: 100px
+}
+.about-wrap {
+    margin-right:50px;
+    margin-left:50px;
+    margin-bottom:2%;
+    /* background: #edf3f5; */
+
+}
+
+.about-page-welcome {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-right:0 ;
+    background: url("images/tt1.png") repeat center;
+    background-size: cover;
+    z-index: 99;
+}
+
+.about-page-welcome::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(21,21,21,.9); */
+    /* background: #595858; */
+}
+.about-content .entry-title {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.welcome-content .entry-title {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.welcome-content .entry-title {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
 .single-page .page-header {
     position: relative;
     z-index: 99;
     padding-top: 100px;
     padding-bottom: 72px;
     background-size: cover !important;
+    text-shadow: 2px 2px 2px #000000
 }
 
 .single-page .page-header::after {
@@ -1162,6 +1461,7 @@ ul.tabs-nav .tab-nav.active {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.7);
+    text-shadow: 2px 2px 2px #000000
 }
 
 .single-page .page-header h1 {
@@ -1170,6 +1470,8 @@ ul.tabs-nav .tab-nav.active {
     font-size: 36px;
     font-weight: 600;
     color: #fff;
+    text-shadow: 2px 2px 2px #000000
+
 }
 
 .single-page .page-header h1::before {
@@ -1181,6 +1483,8 @@ ul.tabs-nav .tab-nav.active {
     height: 4px;
     border-radius: 2px;
     background: #ff5a00;
+    text-shadow: 2px 2px 2px #000000
+
 }
 
 .about-page .page-header {
@@ -1211,10 +1515,18 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-stats {
-    padding: 96px 0;
-    background: #262626;
+    /* padding: 96px 0; */
+    /* background-color: rgba(121, 68, 53, 0.932); */
+    background: url(../NewNLL/images/tt1.png)no-repeat cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 }
-
+.about-rows{
+    background: url(../NewNLL/images/tt1.png)no-repeat cover;
+}
 .about-stats .circular-progress-bar .circle strong,
 .about-stats .circular-progress-bar .entry-title {
     color: #fff;
@@ -1290,7 +1602,7 @@ ul.tabs-nav .tab-nav.active {
 
 .help-us {
     padding: 70px 0 96px;
-    background: #ff3700;
+    background: #ff5a00;
 }
 
 .help-us h2 {
@@ -1313,8 +1625,17 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Causes
 --------------------------------------------------------------*/
+.causeImage{
+    width: 800px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+
+}
 .causes-page .page-header {
+<<<<<<< HEAD
     background: url(images/portfolio-bg2.jpg) no-repeat center;
+=======
+    background: url(images/c2.jpg) no-repeat center;
+>>>>>>> origin/Causes_Page
 }
 
 .causes-page .featured-cause {
@@ -1336,13 +1657,21 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .causes-page .our-causes .cause-content-wrap {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ff5a00 ;/* #e0e0e0; */
     border-top: 0;
 }
 
 .causes-page .highlighted-cause {
     padding: 46px 0 96px;
-    background: #262626;
+    /*background-color: rgba(57, 100, 1, 0.575); /* Adjust the last value (0.1) for opacity */
+     /* background-color: #88C435;  */
+     /* background-color: rgba(136, 196, 53, 0.575); */
+    /* rgba(139, 187, 77, 0.1) */
+    /*background-color: #14668A;*/
+    /* background-color: rgba(20, 102, 138, 0.3);  */
+    /* background-color: rgba(20, 150, 200, 0.3); */
+    background-color: #131212;
+
 }
 
 .causes-page .highlighted-cause .entry-title {
@@ -2089,7 +2418,7 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 30px;
     position: relative;
     left: 20%;
-    
+
 }
 
 .foot-about ul li a {
