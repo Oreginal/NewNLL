@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
 body {
     color: #262626;
     font-size: 16px;
@@ -63,25 +68,25 @@ a:hover, a:active {
 --------------------------------*/
 .color-img-one {
     /* background: url(../images/s5.1.png)no-repeat center; */
-    background: url(../NewNLL/images/s5.1.png)repeat center;
+    background: url(/images/s5.1.png)repeat center;
 }
 
 .color-img-two {
-    background: url(../NewNLL/images/s4.jpg)no-repeat center;
-    background: url(../NewNLL/images/s4.jpg)no-repeat center;
+    background: url(/images/s4.jpg)no-repeat center;
+    background: url(/images/s4.jpg)no-repeat center;
 }
 
 .color-img-three {
-    background: url(../NewNLL/images/s3.1.jpg)no-repeat center;
-    background: url(../NewNLL/images/s3.1.jpg)no-repeat center;
+    background: url(/images/s3.1.jpg)no-repeat center;
+    background: url(/images/s3.1.jpg)no-repeat center;
 }
 
 .color-img-four {
-    background: url(../NewNLL/images/s2.jpg)no-repeat center;
-    background: url(../NewNLL/images/s2.jpg)no-repeat center;
+    background: url(/images/s2.jpg)no-repeat center;
+    background: url(/images/s2.jpg)no-repeat center;
 }
 .color-img-five{
-    background: url(../NewNLL/images/s6\ \(1\).jpg);
+    background: url(/images/s6\ \(1\).jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1347,8 +1352,63 @@ ul.tabs-nav .tab-nav.active {
 .vandmImage2{
     box-shadow: 0px 0px 60px 0px #03ACEF; */
 /* } */
+.col-lg-4 {
+    flex: 0 0 100%; /* Set each column to take full width on small screens */
+    max-width: 100%;
+    padding: 0 2%; /* Use percentage for padding */
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .col-lg-4 {
+      flex: 0 0 48%; /* Adjust column width for larger screens */
+    }
+  }
+  
+.bodHeading {
+    text-align: center;
+    margin-top: 70px;
+    padding: 50px 0;
+}
+
+.bod-member {
+    margin-bottom: 30px;
+}
+
+.bod-member img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.bod-member .frameText {
+    padding: 15px;
+    text-align: left;
+}
+
+.entry-title {
+    font-size: 36px;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* New CSS for responsive layout */
+@media (min-width: 768px) {
+    .bod-member {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
 .botnText{
     text-shadow: 1px 1px 1px #000000;
+    color: white;
+    font-weight: bold;
 
 }
 .ser-sevice-grid {
@@ -1363,7 +1423,7 @@ ul.tabs-nav .tab-nav.active {
      background-color: rgba(139, 187, 77, 0.1) ;
     /*background-color: #14668A;*/
     /* background-color: rgba(20, 102, 138, 0.3);  */
-     background:rgba(0, 191, 255, 0.1);
+     background:rgba(0, 191, 255, 0.25);
 }
 
 .frame {
