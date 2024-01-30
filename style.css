@@ -112,7 +112,6 @@ a:hover, a:active {
 .bodTitle{
     color: #36ee08;
     font-weight:bold;
-
 }
 .bodHeading{
     /* color: #ff5a00; */
@@ -284,7 +283,7 @@ a:hover, a:active {
     justifyContent: 'center',
     alignContent: 'center', */
     background-image: url(../NewNLL/images/tt1.png) no-repeat bottom;
-
+    
 }
 /*
 # Main Menu
@@ -345,7 +344,7 @@ a:hover, a:active {
 .site-navigation ul li.current-menu-item a {
     border-bottom: 3px solid #00b381;
     color: #00b381;
-
+   
 }
 
 /*
@@ -536,7 +535,7 @@ a:hover, a:active {
 
 .elements-page .elements-container {
     margin-top: 54px;
-
+    
 }
 
 .elements-page .btn {
@@ -685,7 +684,7 @@ ul.tabs-nav .tab-nav.active {
 
 .tabs-container {
     padding: 34px;
-
+    
 }
 
 .tab-content {
@@ -915,7 +914,8 @@ ul.tabs-nav .tab-nav.active {
     font-weight: bold;
     margin-left:23%;
     text-align: left;
-    margin-top: 15%;
+    margin-top: 20%;
+
 }
 .visiontextM{
     font-size: 20px;
@@ -1116,7 +1116,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 40px 24px;
     /* background: #edf3f5; */
     /* background:rgba(0, 191, 255, 0.1); */
-    border-radius: 50px;
+    border-radius: 50px;   
     /* border: 5px solid #03ACEF; */
      border:5px solid #88C435;
     /*#8BBB4D */
@@ -1134,7 +1134,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .featured-cause .cause-content-wrap {
-    width: calc(100% - 280px);
+    width: calc(100% - 280px); 
 }
 
 .cause-content-wrap .entry-title a {
@@ -1142,7 +1142,7 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 600;
     color: #262626;
 
-
+ 
 }
 
 .cause-content-wrap .posted-date a,
@@ -1155,12 +1155,12 @@ ul.tabs-nav .tab-nav.active {
     line-height: 1;
     color: #262626;
 
-
+ 
 }
 
 .cause-content-wrap .posted-date a {
     padding-right: 14px;
-    margin-right: 14px;
+    margin-right: 14px;    
 }
 
 .cause-content-wrap .posted-date a::after {
@@ -1178,12 +1178,12 @@ ul.tabs-nav .tab-nav.active {
     margin-bottom: 0;
     font-size: 14px;
     color: #929191;
-
+  
 }
 
 .cause-wrap .fund-raised {
     margin-top: 64px;
-
+    
 }
 
 .fund-raised-details {
@@ -1203,7 +1203,7 @@ ul.tabs-nav .tab-nav.active {
 --------------------------------*/
 .imageEvent{
     width: 1000px; /* Set the desired width */
-    height: 2500px;
+    height: 2500px; 
 }
 .our-causes {
     position: relative;
@@ -1345,11 +1345,12 @@ ul.tabs-nav .tab-nav.active {
 .contentGroup{
     margin: 50px;
 }
-/* .vandmImage1{
-    box-shadow: 10px 0px 60px 0px #03ACEF;
+.vandmImage1{
+    box-shadow: 10px 0px 70px 0px #03ACEF;
 }
 
 .vandmImage2{
+<<<<<<< HEAD
     box-shadow: 0px 0px 60px 0px #03ACEF; */
 /* } */
 .col-lg-4 {
@@ -1405,6 +1406,10 @@ ul.tabs-nav .tab-nav.active {
     }
 }
 
+=======
+    box-shadow: 0px 0px 70px 0px #03ACEF;
+}
+>>>>>>> parent of 8ec9cff (Final Changes to About Page)
 .botnText{
     text-shadow: 1px 1px 1px #000000;
     color: white;
@@ -1428,7 +1433,7 @@ ul.tabs-nav .tab-nav.active {
 
 .frame {
     width: 120%; /* Adjust the width as needed */
-    /*margin: 20px auto; /* Center the frame */
+    /*margin: 20px auto; /* Center the frame */   
     background-color: #ffffff; /* Set the frame's background color */
     border: 10px solid black; /* Set the border color and size */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
@@ -1437,7 +1442,7 @@ ul.tabs-nav .tab-nav.active {
 }
 .frameOff{
  /* Adjust the width as needed */
-    /*margin: 20px auto; /* Center the frame */
+    /*margin: 20px auto; /* Center the frame */   
     background-color: #ffffff; /* Set the frame's background color */
     border: 10px solid black; /* Set the border color and size */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
@@ -1445,12 +1450,10 @@ ul.tabs-nav .tab-nav.active {
     padding-bottom: 20%;
 }
 .frameText{
-color:#131212;
-font-weight: bolder;
-text-shadow: 1px 1px 1px #000000;
+color:#131212
 }
 .team-grid-coloumn{
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     margin-left: 100px
 }
 .about-wrap {
@@ -1531,7 +1534,7 @@ text-shadow: 1px 1px 1px #000000;
     font-weight: 600;
     color: #fff;
     text-shadow: 2px 2px 2px #000000
-
+    
 }
 
 .single-page .page-header h1::before {
@@ -1577,7 +1580,7 @@ text-shadow: 1px 1px 1px #000000;
 .about-stats {
     /* padding: 96px 0; */
     /* background-color: rgba(121, 68, 53, 0.932); */
-    background: url(../NewNLL/images/tt1.png)no-repeat cover;
+    background: url(../NewNLL/images/tt1.png)no-repeat cover; 
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1585,7 +1588,7 @@ text-shadow: 1px 1px 1px #000000;
     -ms-background-size: cover;
 }
 .about-rows{
-    background: url(../NewNLL/images/tt1.png)no-repeat cover;
+    background: url(../NewNLL/images/tt1.png)no-repeat cover; 
 }
 .about-stats .circular-progress-bar .circle strong,
 .about-stats .circular-progress-bar .entry-title {
@@ -1688,7 +1691,7 @@ text-shadow: 1px 1px 1px #000000;
 .causeImage{
     width: 800px; /* Set the desired width */
     height: auto; /* Maintain the aspect ratio by setting height to auto */
-
+        
 }
 .causes-page .page-header {
 <<<<<<< HEAD
@@ -2478,7 +2481,7 @@ text-shadow: 1px 1px 1px #000000;
     margin-right: 30px;
     position: relative;
     left: 20%;
-
+    
 }
 
 .foot-about ul li a {
