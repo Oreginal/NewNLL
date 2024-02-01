@@ -3,7 +3,8 @@
 
 <!-- Mirrored from preview.colorlib.com/theme/thecharity/causes.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2023 06:50:59 GMT -->
 <head>
-    <title>Hello World</title>
+  <title>New Lease of Life Foundation</title>
+  <link rel="icon" href="images/business-logo/logo2.png" type="image/x-icon">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,7 +37,7 @@
                     </div>
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                         <div class="donate-btn">
-                            <a href="#">Donate Now</a>
+                            <a href="#" onclick="showPopup()">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div class="site-branding d-flex align-items-center">
-                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/business-logo/logo.png" alt="logo"></a>
                         </div>
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
                             <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
@@ -98,7 +99,7 @@
                         </figure>
                         <div class="cause-content-wrap">
                             <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h1 class="cardTitle">Gold Day</a>
+                              <h3 class="cardTitle w-100 m-0"><p class="cardText1">Golf Day</a></h3>
                                 </header>
                                 <div class="posted-date">
                                     <p class="cardText1">3 Nov, 2023 </a>
@@ -110,7 +111,7 @@
                                 <p class="cardText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                             <div class="entry-footer mt-5">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </div>
                         <div class="fund-raised w-100">
@@ -152,7 +153,7 @@
                                 <p class="cardText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                             <div class="entry-footer mt-5">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </div>
                         <div class="fund-raised w-100">
@@ -194,7 +195,7 @@
                                 <p class="cardText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                             <div class="entry-footer mt-5">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </div>
                         <div class="fund-raised w-100">
@@ -246,7 +247,7 @@
                         </div>
                     </div>
                     <div class="entry-footer mt-5">
-                        <a href="#" class="btn gradient-bg">Donate Now</a>
+                        <a href="#" class="btn gradient-bg" onclick="showPopup()">Donate Now</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 order-1 order-lg-2">
@@ -263,7 +264,7 @@
                         <figure class="m-0">
                             <img src="images/eventDedication.png" alt>
                             <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </figure>
                         <div class="cause-content-wrap">
@@ -297,7 +298,7 @@
                         <figure class="m-0">
                             <img src="images/eventDala.png" alt>
                             <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </figure>
                         <div class="cause-content-wrap">
@@ -331,7 +332,7 @@
                         <figure class="m-0">
                             <img src="images/eventGolf.jpg" alt>
                             <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                <a href="#" class="btn gradient-bg mr-2" onclick="showPopup()">Donate Now</a>
                             </div>
                         </figure>
                         <div class="cause-content-wrap">
@@ -363,13 +364,50 @@
             </div>
         </div>
     </div>
+    <!-- Popup Modal -->
+<div id="popupModal">
+  <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h4>Donations</h4>
+      <div class="contact-address-grid mb-3">
+          <p>New Lease of Life Foundation</p>
+      </div>
+                  <form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
+                     <input required type="hidden" name="cmd" value="_paynow">
+                     <input required type="hidden" name="receiver" pattern="[0-9]" value="22945775">
+                     <input type="hidden" name="return_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <input type="hidden" name="cancel_url" value="https://www.newleaseoflifefoundation.org/index.html">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td style="padding: 10px;"><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+                     <td style="padding: 10px;"><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="50"
+                        style="width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;"></td>
+                     </tr>
+                     </table>
+                     
+                     <input required type="hidden" name="item_name" maxlength="255" value="Homeless Youth Development">
+                     <input type="hidden" name="item_description" maxlength="255" value="Technical training and personal-development of homeless youth (18 - 35 years)">
+                     <table style="width: 100%;">
+                     <tr>
+                     <td colspan="2" class="center" style="padding: 10px;">
+                     <input type="image" src="https://my.payfast.io/images/buttons/DonateNow/Primary-Large-DonateNow.png" alt="Donate Now" title="Donate Now with Payfast"
+                     style="display: block; margin: 0 auto;">
+                     </td>
+                     </tr>
+                     </table>
+                     </form>
+</div>
+</div>
     <footer class="site-footer">
         <div class="footer-widgets">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="foot-about">
-                            <h2><a class="foot-logo" href="#"><img src="images/logo3.png" alt></a></h2>
+                            <h2><a class="foot-logo" href="#"><img src="images/business-logo/logo3.png" alt></a></h2>
 
                             <ul class="d-flex flex-wrap align-items-center">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -383,7 +421,7 @@
                         <ul>
                             <li><a href="#">Privacy Polticy</a></li>
                             <li><a href="#">Become a Volunteer</a></li>
-                            <li><a href="#">Donate</a></li>
+                            <li><a href="#" onclick="showPopup()">Donate</a></li>
                             <li><a href="#">Testimonials</a></li>
                             <li><a href="#">Causes</a></li>
                             <li><a href="#">Portfolio</a></li>
@@ -450,6 +488,7 @@
     <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
     <script type="text/javascript" src="js/jquery.barfiller.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/donate.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>

@@ -268,7 +268,7 @@ a:hover, a:active {
 .site-navigation ul li a {
     display: block;
     padding: 16px 0;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1;
     color: #262626;
@@ -1258,8 +1258,8 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* New CSS for responsive layout */
@@ -1416,8 +1416,8 @@ ul.tabs-nav .tab-nav.active {
 
 .about-stats {
     padding: 96px 0;
-    background: #262626;
     background: url(images/BOD/bod-bg.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .about-stats .circular-progress-bar .circle strong,
