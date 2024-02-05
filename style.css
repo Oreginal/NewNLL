@@ -82,7 +82,9 @@ img {
     padding: 5%;
     color: #ff5a00;
     font-weight: bolder;
-    
+    font-size: 56px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000000
 }
 
 
@@ -885,9 +887,10 @@ ul.tabs-nav .tab-nav.active {
     bottom: 0;
     left: 0;
     width: 64px;
-    height: 4px;
+    height: 10px;
     border-radius: 2px;
-    background: #ff5a00;
+    /* background: #ff5a00; */
+    background: #36ee08;
 }
 
 .welcome-content .entry-content {
@@ -1219,6 +1222,41 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+.foSection{
+    padding: 96px 0;
+    background: url(images/BOD/bod-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.cardBody{
+    color:black;
+    font-weight: bolder;
+}
+.bodTitle{
+    color:#36ee08; 
+    font-weight: bolder;
+}
+.bodName{
+    color:#03ACEF; 
+    text-shadow: 2px 2px 2px #03ACEF;
+}
+.v-and-m{
+ text-align: center; 
+ color:#03ACEF; 
+ text-shadow: 2px 2px 2px #03ACEF;
+}
+.bodHeading{
+    /* color: #ff5a00; */
+    color: #36ee08;
+    /* color: #5ba6e7; */
+    margin-top: 0; /* Reset default margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-weight:bolder;
+    /*height: 100vh;  Adjust if needed */
+    text-shadow: 2px 2px 2px #000000
+}
 
 .bod-member {
     margin-bottom: 30px;
@@ -1303,8 +1341,8 @@ ul.tabs-nav .tab-nav.active {
     bottom: 0;
     left: 0;
     width: 64px;
-    height: 4px;
-    border-radius: 2px;
+    height: 10px;
+    border-radius: 4px;
     background: #ff5a00;
 }
 .headingBod{
@@ -1388,7 +1426,7 @@ ul.tabs-nav .tab-nav.active {
 
 
 .about-page .page-header {
-    background: url(images/portfolio-bg2.jpg) no-repeat center;
+    background: url(images/about-bg.jpg) no-repeat center;
 }
 
 .about-page .welcome-wrap {
