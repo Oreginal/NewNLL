@@ -489,7 +489,7 @@ a:hover, a:active {
 
 .elements-page .elements-container {
     margin-top: 54px;
-    
+
 }
 
 .elements-page .btn {
@@ -637,7 +637,7 @@ ul.tabs-nav .tab-nav.active {
 
 .tabs-container {
     padding: 34px;
-    
+
 }
 
 .tab-content {
@@ -930,9 +930,9 @@ ul.tabs-nav .tab-nav.active {
     bottom: 0;
     left: 0;
     width: 64px;
-    height: 4px;
+    height: 10px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #36ee08;
 }
 
 @media screen and (max-width: 992px) {
@@ -1020,7 +1020,12 @@ ul.tabs-nav .tab-nav.active {
 
 .featured-cause .cause-wrap {
     padding: 40px 24px;
-    background: #edf3f5;
+    background: none;
+    border:5px solid #88C435;
+    border-radius: 50px;
+    padding: 40px 24px;
+    background: #fafdfd;
+    
 }
 
 .featured-cause .featured-cause .cause-wrap figure {
@@ -1222,6 +1227,15 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+.cardTitle{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    font-weight:bolder;
+}
+.cardText1{
+    font-weight:bolder;
+}
 .foSection{
     padding: 96px 0;
     background: url(images/BOD/bod-bg.jpg) no-repeat center;
@@ -1232,16 +1246,16 @@ ul.tabs-nav .tab-nav.active {
     font-weight: bolder;
 }
 .bodTitle{
-    color:#36ee08; 
+    color:#36ee08;
     font-weight: bolder;
 }
 .bodName{
-    color:#03ACEF; 
+    color:#03ACEF;
     text-shadow: 2px 2px 2px #03ACEF;
 }
 .v-and-m{
- text-align: center; 
- color:#03ACEF; 
+ text-align: center;
+ color:#03ACEF;
  text-shadow: 2px 2px 2px #03ACEF;
 }
 .bodHeading{
@@ -1557,7 +1571,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/portfolio-bg2.jpg) no-repeat center;
+    background: url(images/c2.jpg) no-repeat center;
 }
 
 .causes-page .featured-cause {
@@ -1579,7 +1593,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .causes-page .our-causes .cause-content-wrap {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ff5a00;
     border-top: 0;
 }
 
@@ -1839,12 +1853,12 @@ ul.tabs-nav .tab-nav.active {
     transform: rotate(-180deg);
     transition: transform 0.5s ease-in-out;
   }
-  
+
   .portfolio-item img.loaded {
     transform: rotate(0);
   }
-  
-  
+
+
 
 .portfolio-cont h4 {
     margin-top: 10px;
@@ -2332,7 +2346,7 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 30px;
     position: relative;
     left: 20%;
-    
+
 }
 
 .foot-about ul li a {
@@ -2455,4 +2469,4 @@ ul.tabs-nav .tab-nav.active {
     top: 10px;
     right: 10px;
     cursor: pointer;
-} 
+}
