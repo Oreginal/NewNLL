@@ -1754,6 +1754,27 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+/* Custom styles for the portfolio items */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    width: 100%; /* Set the initial width to 100% for mobile devices */
+  }
+  
+  @media (min-width: 768px) {
+    .portfolio-item {
+      width: calc(33.333% - 30px); /* Adjust the width for larger screens, considering margins */
+      margin-right: 30px; /* Set the right margin between items */
+    }
+  
+    .portfolio-item:nth-child(3n) {
+      margin-right: 0; /* Remove the right margin for every third item in a row */
+    }
+  }
+
 .portfolio .page-header {
     background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
