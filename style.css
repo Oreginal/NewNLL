@@ -1806,6 +1806,9 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.imageHeader{
+    
+}
 .portfolio .page-header {
     background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
