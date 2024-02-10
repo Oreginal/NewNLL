@@ -1096,7 +1096,7 @@ ul.tabs-nav .tab-nav.active {
 .our-causes {
     position: relative;
     padding: 96px 0;
-    background: url("images/cause-bg.jpg") no-repeat center;
+    background: url("images/portfolio-bg2.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -1440,7 +1440,7 @@ ul.tabs-nav .tab-nav.active {
 
 
 .about-page .page-header {
-    background: url(images/about-bg.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .about-page .welcome-wrap {
@@ -1571,7 +1571,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/c2.jpg) no-repeat center;
+    background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
 
 .causes-page .featured-cause {
