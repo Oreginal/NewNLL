@@ -1375,12 +1375,15 @@ ul.tabs-nav .tab-nav.active {
     flex: 0 0 40%; /* Adjust the width as needed */
     margin: 5px 0; /* Decreased margin */
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
+    height: 20%;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 30%;
+    margin-right: 100%;
+    margin-bottom:5%;
+    margin-top:2%
 }
 
 .section-top-border:hover {
@@ -1806,9 +1809,10 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.imageHeader{
-    
-}
+/* .imageHeader{
+color:#0fc63d;
+
+} */
 .portfolio .page-header {
     background: url(images/portfolio-bg2.jpg) no-repeat center;
 }
